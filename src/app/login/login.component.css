@@ -1,0 +1,25 @@
+.login-wrapper {
+    margin: 10rem auto;
+    width: 20rem;
+}
+
+input {
+    margin-top: 30px;
+    margin-bottom: 2rem;
+    border-radius: 50px;;
+}
+
+button {
+    margin-bottom: 2rem;
+    border-radius: 50px;
+}
+
+.loginText{
+    bottom: 5px;
+}
+
+.card{
+    margin-top: 100px;
+    box-shadow: 0px 0px 2px 2px #888888;
+    border: 0px solid;
+    }

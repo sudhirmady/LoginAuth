@@ -1,0 +1,31 @@
+<div class="login-wrapper">
+    <div class="card">
+        <div class="card-body col-12">
+            <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+                <h3 class="h3 mb-3 font-weight-normal text-center"><b> Sign in </b> </h3>
+
+                <label for="inputlogin" class="loginText sr-only text-center">Login </label>
+                <input type="text" id="inputLogin" class="form-control" name="login" placeholder="Enter email" ngModel
+                    required autofocus>
+
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Enter Password"
+                    autocomplete="on" ngModel required>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit"> Submit </button>
+
+                <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                    Please fill all fields.
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                    Invalid user or password.
+                </div>
+            </form>
+
+            <div class="alert alert-info" role="alert">
+                Email: kranthi.allam@laalsa.com <br>
+                password: 123456
+            </div>
+        </div>
+    </div>
+</div>
