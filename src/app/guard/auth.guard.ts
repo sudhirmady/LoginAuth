@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AuthGuard implements CanActivate {
   
-  constructor(protected authenticationService: AuthenticationService, private router: Router) { }
+  constructor(private authenticationService: AuthenticationService, private router: Router) { }
 
   canActivate(
     next: ActivatedRouteSnapshot,

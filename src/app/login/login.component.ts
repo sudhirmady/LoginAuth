@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   isFormValid = false;
   areCredentialsInvalid = false;
 
-  constructor(private authenticationService: AuthenticationService) { }
+  constructor(public authenticationService: AuthenticationService) { }
 
   ngOnInit() {
   }
